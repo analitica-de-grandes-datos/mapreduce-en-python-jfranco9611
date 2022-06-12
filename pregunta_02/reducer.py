@@ -10,8 +10,8 @@ if __name__ == '__main__':
         val = int(val)
 
         if key == curkey:
-            if total >= val:
-                val = total
+            if val >= total:
+                total = val
         else:
             if curkey is not None:
                 sys.stdout.write("{}\t{}\n".format(curkey, total))
